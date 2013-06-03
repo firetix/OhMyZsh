@@ -24,3 +24,26 @@ alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
 
+
+# Git
+# (more aliases in ~/.oh-my-zsh/plugins/git)
+alias gd='git diff'
+alias gs='git status'
+
+# Server-specific shortcuts
+if [[ -f "/etc/hostname" ]] ; then
+  # Admin stuff
+  alias uu='sudo aptitude update && sudo aptitude upgrade'
+  alias ss='sudo service'
+  alias apt='sudo aptitude'
+
+  # Folder stuff
+  alias www='cd ~/www'
+  alias log='cd ~/www/log'
+  alias apache2='cd /etc/apache2/'
+  alias nginx='cd /etc/nginx/'
+fi
+
+# Mac-specific shortcuts
+
+
